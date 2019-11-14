@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    tools:context=".UserAuth.ContactsUs">
+
+    <include
+        layout="@layout/toolbar_main"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <!--Full name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/gray_back">
+
+            <TextView
+                android:id="@+id/fnameET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Full Name"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <!--email-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gray_back">
+
+            <TextView
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Email"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <!--number-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@drawable/email_back">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:layout_gravity="end"
+                android:gravity="end"
+                >
+                <Spinner
+                    android:id="@+id/countryId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:dropDownWidth="wrap_content"
+                    android:spinnerMode="dropdown"
+                    />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:layout_marginBottom="10dp"
+                />
+
+            <EditText
+                android:id="@+id/numberET"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_weight="0.9"
+                android:layout_marginLeft="5dp"
+                android:hint="Mobile No"
+                android:textSize="15sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                />
+        </LinearLayout>
+
+
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/mobileTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+
+        <!--Regarding-->
+
+        <LinearLayout
+            android:id="@+id/regardingLL"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:background="@drawable/email_back">
+
+
+            <Spinner
+                android:id="@+id/regarding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Regarding"
+                android:layout_weight="0.8"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/regardTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"/>
+
+        <!--Description-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/email_back">
+
+            <EditText
+                android:id="@+id/descripationET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Description"
+                android:textSize="14sp"
+               android:layout_margin="10dp"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/descriptionTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+        <!--submit-->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

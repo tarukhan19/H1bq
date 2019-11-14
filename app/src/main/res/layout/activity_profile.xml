@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".UserAuth.Profile">
+
+    <include
+        layout="@layout/toolbar_main">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+        <!--default profile-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/picImg"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:src="@drawable/default_profile"-->
+                <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/edit_pic"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginTop="-20dp"-->
+                <!--android:src="@drawable/edit_pencil"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+        <!--name-->
+
+        <LinearLayout
+            android:id="@+id/fnameLL"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/email_back">
+
+            <EditText
+                android:id="@+id/fnameTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="First Name"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/firtnameTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+
+        <LinearLayout
+            android:id="@+id/lnameLL"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/email_back">
+
+            <EditText
+                android:id="@+id/lnameTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Last Name"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/lastnameTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+
+        <!--username-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/gray_back">
+
+    <TextView
+        android:id="@+id/userTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:hint="Username"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        />
+
+
+        </LinearLayout>
+
+        <!--email-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gray_back">
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Email"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/emailTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+        <!--contary-->
+        <LinearLayout
+            android:id="@+id/countryLL"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@drawable/email_back">
+            <TextView
+                android:id="@+id/contryTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Country"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/drop_downImg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/drop_down_arrow"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/countryTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+        <!--zipnum-->
+
+        <LinearLayout
+            android:id="@+id/zipcodeLL"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/email_back">
+
+            <EditText
+                android:id="@+id/zipTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Zip Code"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/zipcodeTIL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColorHint="@color/gray"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="UPDATE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+
+    >
+
+    <!--<com.dbvertex.powerrefresh.PowerRefreshLayout-->
+    <!--android:id="@+id/refresh_layout"-->
+    <!--android:background="#F5f5f5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="50dp"-->
+
+    <include layout="@layout/toolbar_main">
+
+    </include>
+
+    <!--&gt;-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="?attr/actionBarSize"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="8dp"
+
+            android:paddingBottom="8dp"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/nodatafound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Data Found"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/toparrow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/circle"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:visibility="invisible"
+
+        >
+
+        <ImageView
+
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+
+            android:src="@mipmap/ic_toparrw"
+            android:tint="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <!--</com.dbvertex.powerrefresh.PowerRefreshLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

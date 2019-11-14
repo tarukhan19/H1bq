@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/gradient"
+
+    >
+    <LinearLayout
+            android:id="@+id/back_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"            >
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:src="@drawable/back"
+                />
+
+            <TextView
+                android:id="@+id/q_TV"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:text="Q"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+    <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="" />
+
+                <ImageView
+                    android:id="@+id/edit_img"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/edit_pencil"/>
+
+
+</androidx.appcompat.widget.Toolbar>

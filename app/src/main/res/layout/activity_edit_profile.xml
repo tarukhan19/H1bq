@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".UserAuth.EditProfileActivity">
+    <include
+        layout="@layout/toolbar_main">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+            <!--default profile-->
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/picImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/default_profile"
+                    />
+
+                <ImageView
+                    android:id="@+id/edit_pic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="-20dp"
+                    android:src="@drawable/edit_pencil"
+                    />
+
+            </LinearLayout>
+
+            <!--name-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email_back">
+
+                <EditText
+                    android:id="@+id/fnameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Full Name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:inputType="textVisiblePassword"
+                    />
+
+            </LinearLayout>
+
+            <!--username-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email_back">
+
+                <EditText
+                    android:id="@+id/userET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="User id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:inputType="textVisiblePassword"
+                    />
+
+            </LinearLayout>
+
+            <!--email-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email_back">
+
+                <EditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Email"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:inputType="textVisiblePassword"
+                    />
+
+            </LinearLayout>
+
+            <!--contary-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:background="@drawable/email_back">
+                <TextView
+                    android:id="@+id/contryTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Country"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:textSize="14dp"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/drop_downImg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/drop_down_arrow"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--zipnum-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email_back">
+
+                <EditText
+                    android:id="@+id/zipET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Zip Code"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:inputType="phone"
+
+                    />
+
+            </LinearLayout>
+            <!--update-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="UPDATE"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

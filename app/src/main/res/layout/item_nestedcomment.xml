@@ -1,0 +1,183 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <data>
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <View
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/userNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="handsome"/>
+
+                <TextView
+                    android:id="@+id/opTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="8sp"
+                    android:layout_gravity="left|start"
+                    android:text="OP"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/dateTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:text="just now"/>
+
+
+        </LinearLayout>
+        <!--view sms-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            >
+            <TextView
+                android:id="@+id/messageTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Authoritatively procrastinate resources action items.Authoritatively procrastinate resources action Dec"
+                android:textSize="11sp"
+                android:textColor="@color/gray"/>
+
+            <ImageView
+                android:id="@+id/commentimage"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/likecommLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:visibility="visible"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <!--step 1-->
+
+            <LinearLayout
+                android:id="@+id/likeLL"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/likeImg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/likeCountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="10"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!--2 step-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/commentLL"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/likeDashImg"-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/comment" />-->
+
+                <!--<com.example.amazad.hibq.FontStyle.TextViewFontStyle-->
+                    <!--android:id="@+id/comCountTV"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="3dp"-->
+                    <!--android:text="1"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="@color/gray"-->
+                    <!--android:textSize="12sp" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>
